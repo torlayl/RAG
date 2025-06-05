@@ -1,0 +1,9 @@
+# env files
+.venv
+shell.nix
+# Python cache
+__pycache__/
+
+*/
+
+

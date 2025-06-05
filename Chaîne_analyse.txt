@@ -1,0 +1,36 @@
+
+1_crawling_raw_json
+	aspire n pages web avec une profondeur p et un délai d'attente configurable (fonctionne sur site classique ou Javascript)
+	le résultat est stocké dans le répertoire raw_results_json sous la forme d'un json
+	structure d'un json :
+		url
+		title (titre de la page)
+		text_content : un vrac des entêtes, paragraphes, listes, tables et des autres conteneurs
+		links
+		crawl_time
+	
+	Améliorations impératives : text_content trop long et trop de redondance interne sur les pages longues
+	
+2_Process_json
+	Supprime les doublons sur la base de l'url
+	Ne garde que les sections title, text_content et crawl_time
+	Ne tronque pas les pages pour avoir un résumé qui capte tout le contexte
+	
+3_Enriching_Json
+	Crée un résumé de 3 à 5 phrases et une liste de 8 mots
+	Modifie le json et le sauve dans le répertoire enriched_results_json
+	
+	Améliorations : timeout de ollama pour certaines pages
+	
+4_Chunk_generation
+	Découpe les pages trop longues
+	Ajoute le résumé au contenu du tronçon pour maintenir le même contexte.
+	
+5_Vector_database_generation
+    Plongement des textes en vecteurs
+	Stockage des vecteurs dans une base ChromaDB
+	
+6_RAG_no_interaction
+	Liste des questions avec les bases à interroger : site ou/et biolink
+	Enregistrement des réponses dans un json stocké dans le répertoire Rag_results
+	
