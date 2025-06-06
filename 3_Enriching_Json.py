@@ -32,8 +32,9 @@ logger = logging.getLogger(__name__)
 
 # === Configuration ===
 DEFAULT_CONFIG = {
-    "model": "deepseek-r1:latest",  # Default Ollama model to use
-    "timeout_seconds": 120,  # Timeout for LLM requests (increased from 60)
+    "model": "qwen3:8b",  # Default Ollama model to use
+    #"model": "deepseek-r1:latest",  # Alternative model, trouble with timeout, qwen3:8b is more stable and more quick
+    "timeout_seconds": 300,  # Timeout for LLM requests (increased from 60)
     "delay_seconds": 5.0,   # Delay between LLM requests to avoid overloading
     "max_retries": 3,       # Maximum number of retries for failed requests
     "retry_delay": 10.0,    # Delay between retries in seconds
