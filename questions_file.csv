@@ -1,0 +1,16 @@
+QUESTIONS,BASES
+Is the data source described on this website a primary source? Indicate 'primary' if the data source does not integrate other databases or sources otherwise available on another website for download. If it is not primary indicate 'secondary'.,website
+"If the data source is secondary, list the data sources it uses and the corresponding websites where to find the sources, else return 'NaN'.",website
+"If this data source has been published, indicate the publication reference preferrentially the corresponding PMID.",website
+Indicate the Biolink categories represented in this datasource using Named Entities from the categories names and definitions,website+biolink
+Indicate the Biolink predicates represented in this datasource using Named Predicates from the categories names and definitions,website+biolink
+Indicate the Biolink qualifiers on predicates represented in this datasource using Named qualifiers from the categories names and definitionsOn which Biolink category is the data source centric ? ,website+biolink
+What is the datasource licence? Give the licence name.,website+biolink
+Is the documentation on this data source enough to reuse the information ?,website
+Is the datasource entirely downloadable?,website
+Has this source an API service ?,website
+Can all data from this source be retrieved using the API service?,website
+Does this source represents results from consumed or curated datapoints (e.g. publications or models on multiple datapoints) or single data points (dataset)?,website
+How often is this data source used in the field? Indicate a normalized number of publications between 0 (no other publication mentioning it) and 100 (all publications requiring any info on the categories or predicates refer to this source),website
+What do researchers say about how they trust this source for biomedical research on social networks and blogs? Indicate a number between 0 (no trust) and 1 (perfect trust) from the winning point of view or -1 if no information about user trust was available.,website
+What information is unique about this source compared to similar sources? Indicate a short description of the unique information.,website

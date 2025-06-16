@@ -28,6 +28,10 @@ psutil>=5.9.0
 rich>=13.4.2
 asyncio>=3.4.3
 
+# PDF generation
+reportlab>=4.0.0
+pandas>=2.0.0
+
 # Optional dependencies that may be needed in some scripts
 urllib3>=2.0.0
 argparse>=1.4.0
